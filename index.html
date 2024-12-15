@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Gallery</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #f5f3e5;
+      color: #4b3e33;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    .ABOUT_ME {
+      background-color: #e0d4b7; 
+      color: #4b3e33;
+      text-align: center;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      margin: 40px auto;
+      max-width: 800px;
+    }
+
+    .ABOUT_ME img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 5px solid #6b4f3c;
+    }
+
+    .ABOUT_ME h1 {
+      font-size: 36px;
+      color: #6b4f3c;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    .ABOUT_ME p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #4b3e33;
+      margin-bottom: 20px;
+    }
+
+    .contact-information {
+      background-color: #f8f1e1; 
+      padding: 40px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      margin: 40px auto;
+    }
+
+    .contact-information a {
+      display: inline-block;
+      background: linear-gradient(135deg, #6b4f3c, #f8f1e1);
+      padding: 12px 25px;
+      color: white;
+      text-decoration: none;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 30px;
+      margin: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .contact-information a:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      background: linear-gradient(135deg, #f8f1e1, #6b4f3c);
+    }
+
+    .gallery {
+      text-align: center;
+      padding: 40px;
+    }
+
+    .gallery h1 {
+      font-size: 48px;
+      color: #6b4f3c;
+      text-transform: uppercase;
+      font-weight: bold;
+      margin-bottom: 40px;
+      letter-spacing: 3px;
+    }
+
+    .gallery-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .gallery-item {
+      width: 280px;
+      background-color: #fff;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      overflow: hidden;
+    }
+
+    .gallery-item a {
+      text-decoration: none;
+      color: #4b3e33;
+      display: block;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: 4px solid #6b4f3c;
+      transition: opacity 0.3s ease;
+    }
+
+    .gallery-item p {
+      padding: 15px;
+      font-size: 18px;
+      background-color: #f8f1e1;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .gallery-item:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .gallery-item:hover .gallery-img {
+      opacity: 0.8;
+    }
+
+    @media (max-width: 768px) {
+      .gallery-container {
+        flex-direction: column;
+      }
+
+      .gallery-item {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+
+      .gallery h1 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+ 
+  <div class="ABOUT_ME">
+    <img src="https://drive.google.com/thumbnail?id=155YQ7Gt1V8slKNbDKIqSEXruDgufF2UQ" alt="Your Name" class="profile-img">
+    <h1>About Me</h1>
+    <p>Hi, I'm Jocelyn Parane, a first-year college student pursuing a Bachelor's in Computer Science at the University of Perpetual Help System Dalta.<br>
+      I'm a beginner web developer, currently focused on improving my skills in front-end development.<br>
+      I'm excited to explore frameworks and keep building projects, learning new languages, and experimenting with coding platforms.</p>
+  </div>
+
+  
+  <div class="contact-information">
+    <h2>Contact Me</h2>
+    <a href="https://www.facebook.com/jocelyn.parane.2024?mibextid=ZbWKwL" target="_blank">Facebook</a>
+    <a href="https://www.instagram.com/jcbyln_?igsh=MTNlOHFtbG5lZWtpYg==" target="_blank">Instagram</a>
+  </div>
+
+  
+  <section class="gallery">
+    <h1>My Project Gallery</h1>
+
+    <div class="gallery-container">
+      <div class="gallery-item">
+        <a href="https://sites.google.com/view/myfirstweb-blog/home" target="_blank">
+          <img src="https://drive.google.com/thumbnail?id=1chEzJN8jcZx-P5UIyy1PcIHIfukpb8nX" alt="Project 1" class="gallery-img">
+          <p>Project 1</p>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://sites.google.com/view/mypersonal-webproj2/home" target="_blank">
+          <img src="https://drive.google.com/thumbnail?id=1SXnE6zTGBJbqppmm3ygtfrWKAfHECA23" alt="Project 2" class="gallery-img">
+          <p>Project 2</p>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://sites.google.com/view/netflix-proj3/home" target="_blank">
+          <img src="https://drive.google.com/thumbnail?id=1BN3FRFknlRxjpwIE9BMD8hceKXGLRiRI" alt="Project 3" class="gallery-img">
+          <p>Project 3</p>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://sites.google.com/view/charity-proj4/home" target="_blank">
+          <img src="https://drive.google.com/thumbnail?id=1ifTehlidL8SBGmgZ5Xwz72YsB7_7Dbyq" alt="Project 4" class="gallery-img">
+          <p>Project 4</p>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://sites.google.com/view/interiordesign-proj5/home" target="_blank">
+          <img src="https://drive.google.com/thumbnail?id=1GxoIhHAFcXRWgSTFn5AcqMSaf6S83gTC" alt="Project 5" class="gallery-img">
+          <p>Project 5</p>
+        </a>
+      </div>
+
+      <div class="gallery-item">
+        <a href="https://sites.google.com/view/dashboard-proj6/home" target="_blank">
+          <img src="https://drive.google.com/thumbnail?id=1ePiQvv7y9jUZRYczhuDru1YCveSTyyqe" alt="Project 6" class="gallery-img">
+          <p>Project 6</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
